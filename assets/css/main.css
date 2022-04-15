@@ -91,6 +91,7 @@ summary,
 time,
 mark,
 audio,
+.span1,
 video {
   margin: 0;
   padding: 0;
@@ -289,6 +290,7 @@ h2,
 h3,
 h4,
 h5,
+.span1,
 h6 {
   color: #ffffff;
   font-weight: 600;
@@ -306,7 +308,8 @@ h6 a {
   border-bottom: 0;
 }
 
-h1 {
+h1,
+.span1 {
   font-size: 2.5em;
 }
 
@@ -331,7 +334,8 @@ h6 {
 }
 
 @media screen and (max-width: 736px) {
-  h1 {
+  h1,
+  .span1 {
     font-size: 2em;
   }
 
@@ -3516,7 +3520,7 @@ body.is-preload #header.alt {
   z-index: 1;
 }
 
-#banner h1 {
+#banner h1 .span1 {
   font-size: 3.25em;
 }
 
@@ -4060,13 +4064,22 @@ h4 {
 
 .flex-cont {
   display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
 }
 .flex-child-1 {
-  margin-left: 130px;
+  /* margin-left: 130px; */
   flex: 2;
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  -webkit-flex: 2;
 }
 .flex-child-2 {
   flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
 }
 .no-marg-right {
   text-decoration: underline;
