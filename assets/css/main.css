@@ -4055,5 +4055,20 @@ body.is-menu-visible #menu .inner {
 h2,
 h4 {
   /* font-family: Calibri, "Trebuchet MS"; */
-  color: rgb(231, 220, 220);
+  color: rgb(226, 225, 225);
+}
+
+.flex-cont {
+  display: flex;
+}
+.flex-child-1 {
+  margin-left: 130px;
+  flex: 2;
+}
+.flex-child-2 {
+  flex: 1;
+}
+.no-marg-right {
+  text-decoration: underline;
+  margin-right: 15px !important;
 }
